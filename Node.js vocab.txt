@@ -1,0 +1,67 @@
+QUESTION
+Q: What is npm?
+	Ans npm is package manager of a Node.js package ecosystem. I tis the largest ecosystem of open source libraries in the world
+
+Q: What is Express? 
+	Ans 
+########################################################################################
+CONSOLE
+
+mkdir
+	: make directory
+touch 
+	:make js file
+
+c9
+	:run js file on c9 console
+
+ls
+	: show all files/ folders
+
+########################################################################################
+Node.js
+
+for js file 
+console.log()
+	:show message in console
+
+require("express")
+	:import express package
+
+for html file
+#########################################################
+BASIC SETUP'
+
+app.js
+var express     = require("express"),	
+	app         = express(),
+ 	bodyParser  = require("body-parser"),
+	mongoose    = require("mongoose")
+app.get("/", function(req,res){
+    
+	console.log("in homepage");
+    
+	res.render("landing");
+
+});
+
+
+app.listen(process.env.PORT, process.env.IP, function(){
+   
+	console.log("The YelpCamp Server Has Started!");
+
+});
+
+landing.ejs
+<% include partials/header %>
+ //body
+<% include partials/footer %>
+
+########################################################################################
+NOTE
+
+Install Packages and save in json file
+	> first: npm init 
+	> second:npm install "packages" --save
+	Example 
+		basic set up: npm install mongoose express ejs --save

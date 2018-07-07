@@ -1,0 +1,5 @@
+container
+	:fixed width container
+
+container-fluid
+	:container can expend to fill the available width
